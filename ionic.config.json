@@ -1,0 +1,7 @@
+{
+  "name": "umimaps",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
