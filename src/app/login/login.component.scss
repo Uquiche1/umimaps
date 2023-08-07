@@ -1,0 +1,56 @@
+/* login.component.scss */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #98bb9e; /* Color de fondo azul */
+  }
+  h1{
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: rgb(165, 135, 235); /* Fondo naranja para el título */
+    border: 2px solid transparent;
+    animation: pulse-border 2s infinite;
+  }
+  h2 {
+    margin-bottom: 20px;
+    background-color: rgb(107, 97, 77); /* Fondo naranja para el título */
+    border: 2px solid transparent;
+    animation: pulse-border 2s infinite; /* Aplica la animación al borde del título */
+  }
+  
+  h2:hover {
+    border: 2px solid brown; /* Borde marrón cuando el mouse pasa sobre el título */
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #314c79;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    animation: pulse-border 2s infinite; /* Aplica la animación al botón */
+  }
+  
+  button:hover {
+    background-color: red; /* Cambia el color del botón a rojo cuando el mouse pasa sobre él */
+  }
+  
+  
+  /* Animación del borde */
+  @keyframes pulse-border {
+    0% {
+      border: 2px solid transparent;
+    }
+    50% {
+      border: 2px solid rgb(212, 224, 97); /* Cambia el color del borde a marrón en la mitad de la animación */
+    }
+    100% {
+      border: 2px solid transparent;
+    }
+  }
+  

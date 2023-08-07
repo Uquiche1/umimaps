@@ -1,0 +1,61 @@
+/* normal-profile.component.scss */
+
+.normal-profile-container {
+    height: 100vh; /* Ajustar la altura al 100% de la ventana */
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+    h2 {
+      color: #2ecc71;
+      margin-bottom: 10px;
+    }
+  
+    p {
+      color: #333;
+      margin: 5px 0;
+    }
+  
+    img {
+      max-width: 100%;
+      border-radius: 50%;
+      margin: 10px 0;
+    }
+  
+    input[type='file'] {
+      display: none;
+    }
+  
+    .file-input-label {
+      background-color: #2ecc71;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      display: inline-block;
+      margin-top: 15px;
+    }
+  
+    .file-input-label:hover {
+      background-color: #27ae60;
+    }
+  
+    button {
+      background-color: #2ecc71;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 15px;
+    }
+  
+    button:hover {
+      background-color: #27ae60;
+    }
+  }
+  

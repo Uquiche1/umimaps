@@ -1,27 +1,85 @@
-#container {
-  text-align: center;
+/* home.component.scss */
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
+body {
   margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0a1b2b; /* Color de fondo oscuro */
 }
 
-#container a {
-  text-decoration: none;
+.home-container {
+  position: relative;
+  padding: 15px;
+  color: #fff; /* Color del texto */
+  text-align: center;
+}
+
+h1 {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+/* Estilos para el desarrollador-info */
+.developer-info {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.developer-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: block;
+  border: 2px solid #fff;
+}
+
+.developer-details {
+  margin-top: 20px;
+}
+
+.developer-details h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Estilos para el fondo de estrellitas */
+.home-container::before,
+.home-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.home-container::before {
+  background-image: url('https://th.bing.com/th/id/R.2855cf6038e496c242d06563136750a0?rik=0qgPN7bahjsRdQ&riu=http%3a%2f%2f1.bp.blogspot.com%2f-0jokoKPrRQs%2fTq2pijgGAqI%2fAAAAAAAAACA%2ftO0jzUnuRaQ%2fs1600%2festrellas-002.jpg&ehk=cagq0GViw8awQOhc8%2briIRzyVrpdb%2b6EkI5Q8lCRyOM%3d&risl=&pid=ImgRaw&r=0'); /* Ruta de la imagen de estrellas */
+  opacity: 0.3;
+  z-index: -1;
+  background-repeat: repeat;
+}
+
+.home-container::after {
+  background-image: url('https://th.bing.com/th/id/R.8ca5b226b438cb466d706a84051c1d08?rik=%2bsYMSzDWVEPsCw&pid=ImgRaw&r=0'); /* Ruta de la otra imagen de estrellas */
+  opacity: 0.2;
+  z-index: -1;
+  background-repeat: repeat;
+}
+
+.peru-image {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.umimaps-logo {
+  max-width: 200px;
+  margin-bottom: 20px;
 }

@@ -1,0 +1,18 @@
+<div class="normal-profile-container">
+  <button (click)="retroceder()">Ver Rutas</button>
+  <h2>Bienvenido Usuario Normal</h2>
+  <p>Aquí puedes ver y editar tu perfil</p>
+
+  <!-- Mostrar el correo electrónico del usuario -->
+  <p>Correo electrónico: {{ userEmail }}</p>
+
+  <!-- Mostrar la foto seleccionada o la foto actual del usuario (si existe) -->
+  <img *ngIf="userPhoto" [src]="userPhoto" alt="Foto de perfil" />
+
+  <!-- Formulario para agregar la foto -->
+  <input type="file" (change)="onPhotoSelected($event)" />
+  <button (click)="saveProfile()">Guardar</button>
+
+  <!-- Botón para cerrar sesión -->
+  <button (click)="logout()">Cerrar sesión</button>
+</div>

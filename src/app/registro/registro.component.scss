@@ -1,0 +1,39 @@
+.registro-container {
+  background-color: lightblue;
+  height: 100vh; /* Make the div cover the entire screen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  }
+  
+  .btn {
+    background-color: gold;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .btn-primary {
+    background-color: red; // Botón rojo
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    /* Estilos específicos para el botón "Registrar" */
+  }
+  
+  .btn-google {
+    
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4285F4;
+    color: white;
+    cursor: pointer;
+    /* Estilos específicos para el botón "Registrar con Google" */
+  }
+  

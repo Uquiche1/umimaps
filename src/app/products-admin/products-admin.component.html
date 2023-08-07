@@ -1,0 +1,46 @@
+<body>
+  <div class="container">
+    <h1 class="title">La Ruta</h1>
+    <div class="route-card">
+      <h3>Ruta de los Tesoros Incas</h3>
+      <p><strong>Inicio:</strong> Cusco</p>
+      <p><strong>Destinos:</strong> Machu Picchu, Ollantaytambo, Pisac, Sacsayhuamán</p>
+      <p><strong>Duración:</strong> 5 días</p>
+      <p><strong>Descripción:</strong> Un viaje por los majestuosos tesoros incas, visitando las impresionantes ruinas de Machu Picchu, las terrazas agrícolas de Pisac, la fortaleza de Ollantaytambo y el complejo arqueológico de Sacsayhuamán.</p>
+      <button (click)="tomarRuta('Ruta de los Tesoros Incas')">Tomar Ruta</button>
+    </div>
+    <button (click)="goBack()">←</button>
+    <button class="navigate-button" (click)="salir()">Salir</button>
+    <button class="navigate-button" (click)="avanzar()">Mi Perfil</button>
+    <button class="scroll-button" (click)="scrollDown()">Desplazar Abajo</button>
+    <div class="route-card">
+      <h3>Ruta de la Selva Amazónica</h3>
+      <p><strong>Inicio:</strong> Iquitos</p>
+      <p><strong>Destinos:</strong> Reserva Nacional Pacaya-Samiria, Comunidad Nativa Yagua, Lago Sandoval</p>
+      <p><strong>Duración:</strong> 7 días</p>
+      <p><strong>Descripción:</strong> Un emocionante recorrido por la exuberante selva amazónica, explorando la vida silvestre en la Reserva Nacional Pacaya-Samiria, conociendo la cultura de la Comunidad Nativa Yagua y navegando por el impresionante Lago Sandoval.</p>
+      <button (click)="tomarRuta('Ruta de la Selva Amazónica')">Tomar Ruta</button>
+    </div>
+    <button (click)="goBack()">Atrás</button>
+    <button class="scroll-button" (click)="scrollUp()">Desplazar Arriba</button>
+    <div class="route-card">
+      <h3>Ruta de los Misterios del Norte</h3>
+      <p><strong>Inicio:</strong> Trujillo</p>
+      <p><strong>Destinos:</strong> Chan Chan, El Brujo, Huaca de la Luna, Huanchaco</p>
+      <p><strong>Duración:</strong> 3 días</p>
+      <p><strong>Descripción:</strong> Un viaje por las antiguas civilizaciones del norte del Perú, visitando las ruinas de Chan Chan, los misteriosos murales de El Brujo, las impresionantes Huacas de la Luna y del Sol, y disfrutando de las olas de Huanchaco.</p>
+      <button (click)="tomarRuta('Ruta de los Misterios del Norte')">Tomar Ruta</button>
+    </div>
+
+    <button class="scroll-button" (click)="scrollUp()">Desplazar Arriba</button>
+    <div class="route-card">
+      <h3>Ruta de Aventura en los Andes</h3>
+      <p><strong>Inicio:</strong> Huaraz</p>
+      <p><strong>Destinos:</strong> Laguna 69, Nevado Pastoruri, Chavín de Huántar</p>
+      <p><strong>Duración:</strong> 4 días</p>
+      <p><strong>Descripción:</strong> Una emocionante aventura en las montañas de los Andes, caminando hasta la impresionante Laguna 69, explorando el glaciar del Nevado Pastoruri y descubriendo los misterios de la antigua civilización de Chavín de Huántar.</p>
+      <button (click)="tomarRuta('Ruta de Aventura en los Andes')">Tomar Ruta</button>
+    </div>
+    <button class="scroll-button" (click)="scrollDown()">Desplazar Abajo</button>
+  </div>
+</body>

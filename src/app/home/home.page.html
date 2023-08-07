@@ -1,20 +1,16 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+<!-- home.component.html -->
+<div class="home-container">
+  <a class="back-arrow" (click)="retroceder()"><i class="fas fa-arrow-left"></i> ←</a>
+  <a class="back-arrow" (click)="avanzar()"><i class="fas fa-arrow-left"></i> →</a>
+  <h1>Bienvenidos a Umimaps</h1>
+  <p>Umimaps es una aplicación para explorar las maravillosas rutas turísticas del Perú.</p>
+  
+  <div class="developer-info">
+    <img src="assets\Mapa de Perú.jpg" alt="Desarrollador" class="developer-image">
+    <div class="developer-details">
+      <p>¡Hola! Soy Franklin Uquiche Sanz, el creador de Umimaps. Estoy emocionado de presentarte esta aplicación para que puedas descubrir las mejores rutas turísticas en el Perú.</p>
+    </div>
   </div>
-</ion-content>
+  <img src="assets\R.jpg" alt="Umimaps Logo" class="umimaps-logo">
+  <button (click)="agradecimiento()">se prensenta gracias a:</button>
+</div>

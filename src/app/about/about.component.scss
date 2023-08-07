@@ -1,0 +1,64 @@
+/* about.component.scss */
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #b5ddbc; /* Color de fondo azul */
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    background-color: orange; /* Fondo naranja para el título */
+    border: 2px solid transparent;
+    animation: pulse-border 2s infinite; /* Aplica la animación al borde del título */
+  }
+  
+  h2:hover {
+    border: 2px solid brown; /* Borde marrón cuando el mouse pasa sobre el título */
+  }
+  
+  .team-members {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .team-member {
+    margin-top: 20px;
+    text-align: center;
+    opacity: 0;
+    animation: slide-up 1s forwards; /* Aplica la animación ascendente */
+  }
+  
+  .member-name {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .member-position {
+    font-size: 16px;
+  }
+  
+  /* Animación del borde */
+  @keyframes pulse-border {
+    0% {
+      border: 2px solid transparent;
+    }
+    50% {
+      border: 2px solid brown; /* Cambia el color del borde a marrón en la mitad de la animación */
+    }
+    100% {
+      border: 2px solid transparent;
+    }
+  }
+  
+  /* Animación ascendente */
+  @keyframes slide-up {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
